@@ -59,7 +59,7 @@ function paramValidation() {
       case RecordSortTypes.ID:
         break;
       default:
-        return next(new Error("bad sort type"));
+        return next(new Error("Vaidation error: bad sort type"));
     }
 
     const ascending = req.query.ascending as string;
@@ -67,7 +67,7 @@ function paramValidation() {
 
     if (ascending === "false" || ascending === "true") return next();
 
-    return next(new Error("bad ascending type"));
+    return next(new Error("Vaidation error: bad ascending type"));
   };
 }
 function paginatedResults() {
