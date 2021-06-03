@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    // "noImplicitAny": true, // TODO turn this on after fixing crap
+    "outDir": "dist",
+    "rootDir": "src",
+    "target": "es2015",
+    "sourceMap": true,
+    // "noEmitOnError": true,       // this conflicts with ts-node/mocha
+    // "strictNullChecks": true     // TBD: too late for this now, refactor later
+    // "strict": true               /* Enable all strict type-checking options. */,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"]
+    }
+    // "typeRoots": ["./types"],
+    // "strict": true
+  },
+  "include": ["src/**/*", "types/**/*"]
+}

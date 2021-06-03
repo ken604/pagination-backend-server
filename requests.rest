@@ -1,0 +1,8 @@
+# GET http://localhost:3000/records?page=1&limit=100
+# GET http://localhost:3000/records?page=1&limit=6
+# GET http://localhost:3000/records?page=2&limit=6
+# GET http://localhost:3000/records?page=15&limit=6
+# GET http://localhost:3000/records?page=17&limit=6&sort=name
+# GET http://localhost:3000/records?page=1&limit=100&sort=name&ascending=true
+# GET http://localhost:3000/records?page=2&limit=10&sort=id&ascending=false
+GET http://localhost:3000/records?page=3&limit=10&sort=name&ascending=true
